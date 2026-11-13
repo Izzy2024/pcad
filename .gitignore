@@ -1,0 +1,26 @@
+# dependencias y build
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# material de scraping / extracción (no es código, pesa 258MB+)
+reference/
+.firecrawl/
+
+# capturas de QA y artefactos de trabajo
+docs/design-references/build/
+docs/design-references/daylight/
+docs/research/
+
+# sistema
+.DS_Store
+*.log
+.env
+.env.local
+.env*.local
+
+# snapshots internos de la app
+.alma-snapshots/
