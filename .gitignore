@@ -24,3 +24,8 @@ docs/research/
 
 # snapshots internos de la app
 .alma-snapshots/
+
+# Cloudflare / OpenNext
+.open-next/
+.wrangler/
+.dev.vars
