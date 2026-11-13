@@ -67,6 +67,22 @@ Todo el texto, precios y nombres de producto vienen de `reference/` — la extra
 | `/contacto` | Formulario y oficinas |
 | `/politicas-de-cumplimiento` | Cumplimiento y canal de denuncias |
 
+## Deploy (Cloudflare Workers)
+
+El proyecto usa el adaptador `@opennextjs/cloudflare`.
+
+```bash
+npm run build      # next build + bundle de OpenNext (.open-next/)
+npm run cf:preview # build y preview local en workerd
+npm run cf:deploy  # publicar
+```
+
+`npm run build` deja los tres artefactos que `wrangler deploy` necesita:
+`.open-next/worker.js`, `.open-next/assets` y `.open-next/.build/open-next.config.edge.mjs`.
+
+`output: 'standalone'` y `outputFileTracingRoot` están fijados en `next.config.mjs`:
+sin ellos Next anida el standalone en una ruta distinta y el bundle falla.
+
 ## Pendientes antes de publicar
 
 - Reemplazar el formulario por el endpoint real (hoy es cliente-only).
