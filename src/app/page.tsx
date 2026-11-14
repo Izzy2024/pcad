@@ -1,5 +1,5 @@
 import Hero from '@/components/home/Hero';
-import Pillars from '@/components/home/Pillars';
+import PillarExpand from '@/components/home/PillarExpand';
 import Statement from '@/components/home/Statement';
 import HowItWorks from '@/components/home/HowItWorks';
 import BrandGrid from '@/components/home/BrandGrid';
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Pillars />
+      <PillarExpand />
       <Statement />
       <HowItWorks />
       <BrandGrid />
