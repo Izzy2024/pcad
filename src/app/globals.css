@@ -45,14 +45,6 @@ body {
 
 ::selection { background: var(--brand); color: var(--beige); }
 
-/* ---- Grid overlay lines like Daylight ---- */
-.grid-lines { position: fixed; inset: 0; pointer-events: none; z-index: 40; }
-.grid-lines span {
-  position: absolute; top: 0; bottom: 0; width: 1px;
-  background: rgba(76, 40, 6, 0.13);
-}
-/* sobre superficies oscuras la rejilla se invierte */
-.grid-lines.on-dark span { background: rgba(255, 247, 233, 0.22); }
 
 /* ---- Typography helpers ---- */
 .t-display { font-family: var(--font-display), serif; font-weight: 400; letter-spacing: -0.02em; }

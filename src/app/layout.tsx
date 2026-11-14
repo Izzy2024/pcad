@@ -3,7 +3,6 @@ import './globals.css';
 import SmoothScroll from '@/components/SmoothScroll';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
-import GridLines from '@/components/GridLines';
 
 export const metadata: Metadata = {
   title: 'PCCAD · Soluciones tecnológicas para la industria AEC',
@@ -16,7 +15,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <body className="bg-beige font-sans antialiased">
         <SmoothScroll />
-        <GridLines />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
